@@ -7,7 +7,7 @@
 
 .content-wrapper {
     position: relative; /* Needed for the overlay */
-    background-image: url(another.jpg);
+    background-image: url(backim.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -25,7 +25,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.623); /* Adjust the rgba values to change brightness */
+    background: rgba(0, 0, 0, 0.5); /* Adjust the rgba values to change brightness */
     z-index: 1; /* Make sure it sits above the background image but below the text */
 }
 
@@ -74,7 +74,7 @@ body {
 
     margin: 0;
     font-family:'Times New Roman';
-    background-color: #f4f4f4;
+    background-color: rgb(200, 200, 200);
 }  
 
 .dark-mode {
@@ -349,7 +349,7 @@ body {
 
 
 .mobiles a{
-        color: white;
+        
     text-decoration: none;
     padding: 10px;
 }
@@ -470,31 +470,6 @@ background-color:  rgb(45, 135, 129);
         }
     }
 
-
-    .grid-container{
-        display: grid;
-        grid-template-columns:repeat(3,1fr);
-        gap:20px;
-        justify-content: center;
-
-    }
-    .grid-item{
-        flex-direction: column;
-        padding:20px;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-    }
-
-    .grid-item h2{
-        margin-bottom: 10px;
-        
-    }
-    .grid-item p{
-        text-align: center;
-        
-    }
-
     .first-sec,.second-sec{
         background-color: rgb(200, 200, 200);
         padding: 15px;
@@ -513,365 +488,96 @@ font-size: 16px; /* Font size */
 
 
 
-    .responsive-grid-cards {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-gap: 40px; /* Space between cards */
-padding: 10px; /* Padding around the grid */
-max-width: 2000px; /* Maximum width for larger screens */
-margin: 0 auto; /* Center the grid container horizontally */
-}
-
-/* Card Styling */
-.card {
-background: #d9d9d9;
-border-radius: 6px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-padding: 20px;
-text-align:left;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-position: relative; /* Needed for overlay positioning */
-}
-
-.card h2 {
-color: rgb(60, 73, 92);;
-margin: 0 0 10px;
-font-size: 1.2em;
-}
-
-.card p {
-margin: 0;
-color: rgb(60, 73, 92);
-}
-
-/* Card Image Container */
-.card-img-container {
-position: relative;
-width: 100%;
-height: 300px; /* Adjust height as needed */
-overflow: hidden; /* Ensure image doesn't overflow */
-border-radius: 6px; /* Match card border radius */
-margin-bottom: 10px; /* Space between image and description */
-}
-
-.card-img {
-width: 100%;
-height: 100%;
-object-fit: cover; /* Ensures image covers container */
-display: block; /* Removes bottom space from images */
-}
-
-/* Darken image with overlay */
-.card-img-overlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #fff;
-background: rgba(0, 0, 0, 0.5); /* Darken image */
-text-align: center;
-font-size: 1.2em;
-padding: 10px;
-}
-
-/* Hover Effect */
-.card:hover {
-transform: translateY(-5px);
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-.grid-container{
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-    justify-content: center;
-
-}
-
-@media (max-width:768px){
-  .grid-container{
-    grid-template-columns: 1fr;
-  }
 
 
-}
 
-.about-icon{
-    font-size: 20px;
-    color: rgb(60, 73, 92);
-}
-.grid-item{
-    flex-direction: column;
-    padding:20px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
 
-.grid-item h3{
-    color: rgb(60, 73, 92);
-    margin-bottom: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer {
+        background-color: #acadad;
+        color: #fff;
+        padding: 20px 10px;
+        text-align: center;
+    }
     
-}
-.grid-item p{
-    text-align: center;
-    color: rgb(60, 73, 92);
-}
-
-.responsive-columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Space between columns */
-}
-
-.column {
-    flex: 1;
-    min-width: 250px; /* Ensures columns stack on very small screens */
-    padding: 10px;
-
-
-    box-shadow: 0 2px 5px #1919191a;
-}
-
-h3 {
-    margin-top: 0;
-}
-
-.email-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.email-form label {
-    font-weight: bold;
-}
-
-.email-form input,
-.email-form textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.email-form button {
-    padding: 10px;
-    background-color: #858585;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.email-form button:hover {
-    background-color: #9ec8f5;
-}
-
-
-.map-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-
-.fixed-widgets {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 1000;
-}
-
-.fixed-widgets a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #25D366; /* WhatsApp green */
-    color: #fff;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease-in-out;
-}
-
-.fixed-widgets a.call-widget {
-    background-color: #34b7f1; /* Light blue for the call widget */
-}
-
-.fixed-widgets a:hover {
-    transform: scale(1.1);
-}
-
-.fixed-widgets i {
-    font-size: 18px;
-}
-
-.faq-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #b6b6b6;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.faq-section h2 {
-    text-align: center;
-    color: #3c495c;
-    margin-bottom: 20px;
-    font-size: 2em;
-}
-
-.faq-container {
-    margin-top: 20px;
-}
-
-.faq-item {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #d1cfcf;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.faq-question:hover {
-    background-color: #d4d4d4;
-}
-
-.faq-question h4 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #3c495c;
-}
-
-.faq-question i {
-    font-size: 1.2em;
-    color: #3c495c;
-    transition: transform 0.3s ease;
-}
-
-.faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding: 0 10px;
-}
-
-.faq-answer p {
-    margin: 0;
-    padding: 10px 0;
-    color: #3c495c;
-    font-size: 1em;
-}
-
-.faq-item.active .faq-answer {
-    max-height: 200px; /* Adjust based on the content length */
-}
-
-.faq-item.active .faq-question i {
-    transform: rotate(180deg);
-}
-
-.footer {
-    background-color: #acadad;
-    color: #fff;
-    padding: 20px 10px;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-column {
-    flex: 1;
-    min-width: 200px;
-}
-
-.footer-column h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.footer-column p {
-    font-size: 0.9em;
-    line-height: 1.6;
-}
-
-.footer-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-column ul li {
-    margin: 8px 0;
-}
-
-.footer-column ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9em;
-}
-
-.footer-column ul li a:hover {
-    text-decoration: underline;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 0;
-    list-style: none;
-}
-
-.social-icons li a {
-    color: #fff;
-    font-size: 1.2em;
-}
-
-.footer-bottom {
-    border-top: 1px solid #666;
-    margin-top: 20px;
-    padding-top: 10px;
-}
-
-.footer-bottom p {
-    font-size: 0.8em;
-}
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-column {
+        flex: 1;
+        min-width: 200px;
+    }
+    
+    .footer-column h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    
+    .footer-column p {
+        font-size: 0.9em;
+        line-height: 1.6;
+    }
+    
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-column ul li {
+        margin: 8px 0;
+    }
+    
+    .footer-column ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+    
+    .footer-column ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .social-icons li a {
+        color: #fff;
+        font-size: 1.2em;
+    }
+    
+    .footer-bottom {
+        border-top: 1px solid #666;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.8em;
+    }
+    
