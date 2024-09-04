@@ -624,7 +624,7 @@ font-size: 16px; /* Font size */
       }
       
       .slider-btns {
-        position:sticky;
+        position:relative;
         top: 50%;
         z-index: 2;
         width: 100%;
