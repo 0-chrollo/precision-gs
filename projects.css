@@ -581,3 +581,134 @@ font-size: 16px; /* Font size */
         font-size: 0.8em;
     }
     
+
+    .main-wrapper {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+      
+      .slider-wrapper {
+        width: 50%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+      }
+      
+      .slides {
+        width: 100%;
+        position: absolute;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .slides h1 {
+        position: relative;
+        top: 5rem;
+        left: 1rem;
+        backdrop-filter: blur(7px);
+        width: 9rem;
+        padding: 1rem;
+      }
+      
+      .slides img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.3rem;
+      }
+      
+      .slider-btns {
+        position:sticky;
+        top: 50%;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .slider-btns span {
+        padding: 1rem 1.2rem;
+        font-size: 1.5rem;
+        background: rgba(79, 79, 79, 0.478);
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+      }
+      
+      .dots {
+        position: absolute;
+        width: 100%;
+        top: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        z-index: 1;
+      }
+      
+      .dots .dot {
+        width: 1rem;
+        height: 1rem;
+        background-color: white;
+        opacity: 0.2;
+        border-radius: 50%;
+        transition: opacity 0.2s ease-in-out;
+        cursor: pointer;
+      }
+      
+      @media screen and (max-width: 950px) {
+        .slider-wrapper {
+          width: 70%;
+        }
+      }
+      
+      @media screen and (max-width: 680px) {
+        .slider-wrapper {
+          width: 90%;
+        }
+      }
+
+
+      .fixed-widgets {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000;
+    }
+    
+    .fixed-widgets a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #25D366; /* WhatsApp green */
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    .fixed-widgets a.call-widget {
+        background-color: #34b7f1; /* Light blue for the call widget */
+    }
+    
+    .fixed-widgets a:hover {
+        transform: scale(1.1);
+    }
+    
+    .fixed-widgets i {
+        font-size: 19px;
+    }
+    
