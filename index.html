@@ -40,35 +40,36 @@
     <div class="content-wrapper">
         <section>
             <h1>
-    <span id="typewriter" style="border-right: 2px solid black; white-space: nowrap; overflow: hidden; display: inline-block;"></span>
+    <span style="color: rgba(83, 162, 236, 0.849);">Precision</span> 
+    <span style="color: rgb(167, 167, 7);">Genuine Solutions.</span> 
+    (Slike Pgs Projects) 
+    <span id="typewriter" style="border-right: 2px solid black; white-space: nowrap; display: inline-block;"></span>
 </h1>  
 <br/>
 
 <script>
-    const text = `<span style="color: rgba(83, 162, 236, 0.849);">Precision</span> 
-                  <span style="color: rgb(167, 167, 7);">Genuine Solutions.</span> 
-                  (Slike Pgs Projects)`;
-    
-    const speed = 100; // Typing speed in milliseconds
+    const text = " |"; // Space to create an effect after the text
+    const speed = 200; // Typing speed in milliseconds
     let index = 0;
     const typewriterElement = document.getElementById("typewriter");
 
     function typeWriter() {
         if (index < text.length) {
-            typewriterElement.innerHTML += text.charAt(index);
+            typewriterElement.textContent += text.charAt(index);
             index++;
             setTimeout(typeWriter, speed);
         } else {
             setTimeout(() => {
-                typewriterElement.innerHTML = ""; // Clear text
+                typewriterElement.textContent = ""; // Clear text
                 index = 0;
                 typeWriter(); // Restart animation
-            }, 2000);
+            }, 1000);
         }
     }
 
     typeWriter();
 </script>
+
   <p>‘EKHAYA BAJONGE KUWE, WE MULTIPLY QUALITY FOR A JOYFUL HOME’</p>
             
             <!-- Button container -->
