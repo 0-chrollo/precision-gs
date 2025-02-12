@@ -38,9 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
-
         
 const slides = document.querySelectorAll('.slides');
 const prevBtn = document.getElementById('prev-btn');

@@ -10,11 +10,11 @@
     background-image: url(another.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position:center;
     font-family: 'Times New Roman', Times, serif;
-    height: 60vh;
+    height: 70vh;
     margin: 0;
-    overflow: hidden; /* Ensures no content overflow */
+    /* Ensures no content overflow */
 }
 
 /* Add an overlay to decrease image brightness */
@@ -35,17 +35,17 @@
     z-index: 2; /* Ensure text is above the overlay */
     color: #fff; /* Ensure text is readable on the dimmed background */
     text-align: center; /* Center the text horizontally */
-    padding: 10vh; /* Optional padding */
-    margin-bottom: 30vh; /* Space for buttons */
+    padding: 13vh; /* Optional padding */
+    
 }
 
 /* Style for the button container */
 .button-container {
     display: flex;
     justify-content: center; /* Center buttons horizontally */
-    gap: 45%; /* Space between buttons */
+    gap: 65%; /* Space between buttons */
     position: absolute; /* Position fixed to the bottom of the section */
-    bottom: 10px; /* Distance from the bottom of the section */
+    bottom: -65px; /* Distance from the bottom of the section */
     left: 50%;
     transform: translateX(-50%);
     z-index: 2; /* Ensure buttons are above the overlay */
@@ -54,7 +54,7 @@
 /* Style for individual buttons */
 .button {
     display: inline-block;
-    padding: 10px 30px; /* Adjust padding as needed */
+    padding: 12px 35px; /* Adjust padding as needed */
     background-color: gray;
     color: white;
     text-decoration: none;
@@ -524,7 +524,7 @@ margin: 0 auto; /* Center the grid container horizontally */
 
 /* Card Styling */
 .card {
-background: #d9d9d9;
+background: #d0d0d0;
 border-radius: 6px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 padding: 20px;
@@ -599,24 +599,38 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 
 }
 
-.about-icon{
-    font-size: 20px;
-    color: rgb(60, 73, 92);
+
+.about-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;  /* Adjust width as needed */
+    height: 50px;  /* Adjust height as needed */
+    border-radius: 50%;  /* Makes the background round */
+    background-color: rgb(201, 201, 201);  /* Background color of the circle */
+    border: 3px solid rgb(60, 73, 92); /* Red border */
+    margin-bottom: 15px;  /* Space between icon and text */
 }
-.grid-item{
+
+.about-icon i {
+    color: rgb(60, 73, 92);  /* Icon color */
+    font-size: 24px;  /* Icon size */
+}
+
+.grid-item {
     flex-direction: column;
-    padding:20px;
+    padding: 20px;
     justify-content: center;
     display: flex;
     align-items: center;
 }
 
-.grid-item h3{
+.grid-item h3 {
     color: rgb(60, 73, 92);
     margin-bottom: 10px;
-    
 }
-.grid-item p{
+
+.grid-item p {
     text-align: center;
     color: rgb(60, 73, 92);
 }
@@ -657,6 +671,7 @@ h3 {
     border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
+    background-color: #dadada;
 }
 
 .email-form button {
@@ -768,9 +783,9 @@ h3 {
     background-color: #d4d4d4;
 }
 
-.faq-question h4 {
+.faq-question h5 {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 2vh;
     color: #3c495c;
 }
 
