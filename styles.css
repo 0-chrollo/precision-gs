@@ -600,6 +600,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 
+
 .about-icon {
     display: flex;
     justify-content: center;
@@ -627,7 +628,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 
 .grid-item h3 {
     color: rgb(60, 73, 92);
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 }
 
 .grid-item p {
