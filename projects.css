@@ -12,9 +12,10 @@
     background-size: cover;
     background-position: center center;
     font-family: 'Times New Roman', Times, serif;
-    height: 70vh;
+    height: 55vh;
     margin: 0;
     overflow: hidden; 
+    
 }
 
 
@@ -25,7 +26,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.474); 
     z-index: 1; 
 }
 
@@ -676,39 +677,57 @@ font-size: 16px; /* Font size */
       }
 
 
-      .fixed-widgets {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        z-index: 1000;
+     
+.fixed-widgets {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    animation: float 2s ease-in-out infinite; /* Added floating animation */
+}
+
+/* Floating effect animation */
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Start at normal position */
     }
-    
-    .fixed-widgets a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
-        background-color: #25D366; /* WhatsApp green */
-        color: #fff;
-        text-decoration: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.2s ease-in-out;
+    50% {
+        transform: translateY(-15px); /* Move up by 10px */
     }
-    
-    .fixed-widgets a.call-widget {
-        background-color: #34b7f1; /* Light blue for the call widget */
+    100% {
+        transform: translateY(0); /* Return to normal position */
     }
-    
-    .fixed-widgets a:hover {
-        transform: scale(1.1);
-    }
-    
-    .fixed-widgets i {
-        font-size: 19px;
-    }
-    
+}
+
+/* Widget style */
+.fixed-widgets a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #25D366; /* WhatsApp green */
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Call widget style */
+.fixed-widgets a.call-widget {
+    background-color: #34b7f1; /* Light blue for the call widget */
+}
+
+/* Hover effect */
+.fixed-widgets a:hover {
+    transform: scale(1.1);
+}
+
+/* Icon styling */
+.fixed-widgets i {
+    font-size: 19px;
+}

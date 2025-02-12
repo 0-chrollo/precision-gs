@@ -38,17 +38,60 @@
     <!-- New Section Below the Image -->
     <div class="content-wrapper">
         <section>
-            <h1><span style="color: rgba(53, 53, 238, 0.849);">Precision</span> <span style="color: rgb(167, 167, 7);">Genuine Solutions. </span> (Slike Pgs Projects) </h1>  <br/>
+            <h1 id="typewriter"><span class="cursor"> |</span></h1>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const textArray = [
+                        { text: "Precision ", class: "blue" },
+                        { text: "Genuine ", class: "yellow" },
+                        { text: "Solutions.", class: "yellow" }
+                    ];
+                    
+                    const element = document.getElementById("typewriter");
+                    const cursor = document.querySelector(".cursor");
+        
+                    let textIndex = 0;
+                    let typingSpeed = 100;
+        
+                    function typeText() {
+                        if (textIndex < textArray.length) {
+                            let word = textArray[textIndex];
+                            let chars = word.text.split("");
+                            let spanElement = document.createElement("span");
+                            if (word.class) spanElement.classList.add(word.class);
+                            element.insertBefore(spanElement, cursor);
+        
+                            let charIndex = 0;
+                            function typeLetter() {
+                                if (charIndex < chars.length) {
+                                    spanElement.textContent += chars[charIndex];
+                                    charIndex++;
+                                    setTimeout(typeLetter, typingSpeed);
+                                } else {
+                                    textIndex++;
+                                    setTimeout(typeText, typingSpeed);
+                                }
+                            }
+                            typeLetter();
+                        }
+                    }
+        
+                    typeText();
+                });
+            </script>
+        
+            <br/> <br/>
+            <p style="font-family: 'Trebuchet MS'; color: rgb(216, 239, 239);">Sliqe PGS Projects</p> <br/>
             <p>‘EKHAYA BAJONGE KUWE, WE MULTIPLY QUALITY FOR A JOYFUL HOME’</p>
-            
+    
             <!-- Button container -->
             <div class="button-container">
-                <a href="index.html" class="button">Home</a>
-                <a href="#about" class="button">Contact</a>
+                <a href="#contact" class="button"> Contact</a>
+                <a href="#aboutus" class="button">About</a>
             </div>
-        </section>
+        </section>     
     </div>
-</body>
     <section class="first-sec">
 
         <p class="roles">Projects →</p>
