@@ -40,14 +40,14 @@
     <div class="content-wrapper">
         <section>
             <h1>
-    <span id="typewriter" style="border-right: 2px solid black; white-space: nowrap; display: inline-block;"></span>  
+    <span id="typewriter" style="border-right: 2px solid black; white-space: nowrap; display: inline-block;"></span>
     (Slike Pgs Projects)
 </h1>  
 <br/>
 
 <script>
     const text = `<span style="color: rgba(83, 162, 236, 0.849);">Precision</span> 
-                  <span style="color: rgb(167, 167, 7);">Genuine Solutions.</span>`; 
+                  <span style="color: rgb(167, 167, 7);">Genuine Solutions.</span> `;
     
     const speed = 100; // Typing speed in milliseconds
     let index = 0;
@@ -55,12 +55,11 @@
 
     function typeWriter() {
         if (index < text.length) {
-            typewriterElement.innerHTML += text.charAt(index);
+            typewriterElement.innerHTML = text.substring(0, index + 1); // Adds letter by letter
             index++;
             setTimeout(typeWriter, speed);
         } else {
             setTimeout(() => {
-                typewriterElement.innerHTML = ""; // Clear text
                 index = 0;
                 typeWriter(); // Restart animation
             }, 2000);
@@ -70,7 +69,6 @@
     typeWriter();
 </script>
 
-        </section>
 
   <p>‘EKHAYA BAJONGE KUWE, WE MULTIPLY QUALITY FOR A JOYFUL HOME’</p>
             
