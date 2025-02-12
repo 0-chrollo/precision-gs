@@ -12,7 +12,7 @@
     background-size: cover;
     background-position:center;
     font-family: 'Times New Roman', Times, serif;
-    height: 70vh;
+    height: 60vh;
     margin: 0;
     /* Ensures no content overflow */
 }
@@ -35,7 +35,7 @@
     z-index: 2; /* Ensure text is above the overlay */
     color: #fff; /* Ensure text is readable on the dimmed background */
     text-align: center; /* Center the text horizontally */
-    padding: 13vh; /* Optional padding */
+    padding: 15vh; /* Optional padding */
     
 }
 
@@ -43,9 +43,9 @@
 .button-container {
     display: flex;
     justify-content: center; /* Center buttons horizontally */
-    gap: 65%; /* Space between buttons */
+    gap: 55%; /* Space between buttons */
     position: absolute; /* Position fixed to the bottom of the section */
-    bottom: -65px; /* Distance from the bottom of the section */
+    bottom: 1px; /* Distance from the bottom of the section */
     left: 50%;
     transform: translateX(-50%);
     z-index: 2; /* Ensure buttons are above the overlay */
