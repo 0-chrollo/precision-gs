@@ -6,7 +6,7 @@
 
 
 .content-wrapper {
-    position: relative; /* Needed for the overlay */
+    position: relative; /* Needed for my overlay */
     background-image: url(another.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,10 +77,6 @@ body {
     background-color: #f4f4f4;
 }  
 
-.dark-mode {
-    background-color: rgba(18, 18, 18, 0.973);
-    color: rgb(178, 209, 207);
-}
 
 .light-mode {
     background-color: rgba(245, 245, 245, 0.973);
@@ -548,16 +544,16 @@ color: rgb(60, 73, 92);
 .card-img-container {
 position: relative;
 width: 100%;
-height: 300px; /* Adjust height as needed */
+height: 300px; 
 overflow: hidden; /* Ensure image doesn't overflow */
 border-radius: 6px; /* Match card border radius */
-margin-bottom: 10px; /* Space between image and description */
+margin-bottom: 10px; 
 }
 
 .card-img {
 width: 100%;
 height: 100%;
-object-fit: cover; /* Ensures image covers container */
+object-fit: cover; 
 display: block; /* Removes bottom space from images */
 }
 
@@ -802,7 +798,7 @@ h3 {
     background-color: #d4d4d4;
 }
 
-.faq-question h4 {
+.faq-question h5 {
     margin: 0;
     font-size: 1.2em;
     color: #3c495c;
@@ -837,6 +833,7 @@ h3 {
 }
 
 .footer {
+   
     background-color: #acadad;
     color: #fff;
     padding: 20px 10px;
@@ -908,4 +905,33 @@ h3 {
 
 .footer-bottom p {
     font-size: 0.8em;
+}
+
+h1 {
+    font-size: 25px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 50vw;
+    display: inline-block;
+}
+.blue { color: rgba(49, 49, 235, 0.849); }
+.yellow{ color: rgb(167, 167, 7); }
+
+.cursor {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1em;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.liner{width:40%;
+    height:2.5px; 
+    background: rgb(11, 11, 43); 
+    margin-top: 20px;
 }
